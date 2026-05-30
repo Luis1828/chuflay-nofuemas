@@ -36,6 +36,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
+  <link rel="preload" as="image" href="assets/NoFueMas.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -46,12 +47,14 @@
       <div class="album-stage" aria-label="Portada del álbum No Fue Más">
         <div class="cover">
           <img
+            id="albumCover"
+            class="cover-img"
             src="assets/NoFueMas.png"
             alt="Portada del álbum No Fue Más de Chuflay"
             width="1254"
             height="1254"
             loading="eager"
-            decoding="sync"
+            decoding="async"
             fetchpriority="high"
           >
         </div>
@@ -293,6 +296,44 @@
           <span>Facebook</span>
         </a>
       </div>
+      <details class="more-platforms">
+        <summary>
+          <span>Para los fitu-fiu</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </summary>
+
+        <div class="store-grid">
+          <a class="store-link" href="https://music.apple.com/us/artist/chuflay/1702761691" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-apple"></i>
+            <span>Apple Music</span>
+          </a>
+
+          <a class="store-link" href="https://music.apple.com/bo/artist/chuflay/1702761691?l=en" target="_blank" rel="noopener noreferrer" >
+            <i class="fa-brands fa-itunes-note"></i>
+            <span>iTunes</span>
+          </a>
+
+          <a class="store-link" href="https://music.amazon.com/artists/B0CFPW8T6C/chuflay" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-amazon"></i>
+            <span>Amazon Music</span>
+          </a>
+
+          <a class="store-link" href="https://www.deezer.com/us/artist/225768065" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-deezer"></i>
+            <span>Deezer</span>
+          </a>
+
+          <a class="store-link" href="https://music.youtube.com/@chuflay_oficial" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-youtube"></i>
+            <span>YouTube Music</span>
+          </a>
+
+          <a class="store-link" href="https://www.tidal.com/artist/28278689" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-tidal">T</i>
+            <span>Tidal</span>
+          </a>
+        </div>
+      </details>
     </section>
   </main>
 
@@ -300,6 +341,7 @@
     Skyline Studios · Todos los derechos reservados · &copy; 2026
   </footer>
 
+  <div class="cursor-tooltip" id="cursorTooltip">Todavía no disponible</div>
   <script src="js/player.js"></script>
 </body>
 </html>

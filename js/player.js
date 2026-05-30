@@ -1,3 +1,20 @@
+const albumCover = document.querySelector("#albumCover");
+
+if (albumCover) {
+  const coverBox = albumCover.closest(".cover");
+
+  function revealCover() {
+    coverBox.classList.add("is-loaded");
+  }
+
+  if (albumCover.complete && albumCover.naturalWidth > 0) {
+    revealCover();
+  } else {
+    albumCover.addEventListener("load", revealCover);
+    albumCover.addEventListener("error", revealCover);
+  }
+}
+
 const players = Array.from(document.querySelectorAll(".player"));
 const audios = players.map((player) => player.querySelector(".hidden-audio"));
 
@@ -171,4 +188,29 @@ if (countdown) {
 
   updateCountdown();
   const countdownInterval = setInterval(updateCountdown, 1000);
+}
+
+const tooltip = document.querySelector("#cursorTooltip");
+const disabledLinks = document.querySelectorAll(".is-disabled");
+
+if (tooltip) {
+  disabledLinks.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      event.preventDefault();
+    });
+
+    link.addEventListener("mouseenter", () => {
+      tooltip.textContent = link.dataset.tooltip || "Todavía no disponible";
+      tooltip.classList.add("show");
+    });
+
+    link.addEventListener("mousemove", (event) => {
+      tooltip.style.left = `${event.clientX}px`;
+      tooltip.style.top = `${event.clientY}px`;
+    });
+
+    link.addEventListener("mouseleave", () => {
+      tooltip.classList.remove("show");
+    });
+  });
 }
