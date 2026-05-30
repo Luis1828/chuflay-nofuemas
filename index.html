@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta author="Luis Saucedo" />
+
+  <title>Chuflay - No Fue Más</title>
+  <meta name="description" content="No Fue Más, el nuevo álbum de Chuflay. Escucha previews oficiales y encuentra las redes del proyecto." />
+  <meta name="theme-color" content="#050505" />
+
+  <link rel="shortcut icon" href="assets/chuflay.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/chuflay.png">
+
+  <meta property="og:title" content="Chuflay - No Fue Más" />
+  <meta property="og:description" content="Escucha previews oficiales del nuevo álbum de Chuflay." />
+  <meta property="og:image" content="assets/NoFueMas.png" />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <main>
+    <section class="hero" id="inicio">
+      <div class="album-stage" aria-label="Portada del álbum No Fue Más">
+        <div class="cover">
+          <img
+            src="assets/NoFueMas.png"
+            alt="Portada del álbum No Fue Más de Chuflay"
+            width="1254"
+            height="1254"
+            loading="eager"
+            decoding="sync"
+            fetchpriority="high"
+          >
+        </div>
+      </div>
+
+      <p class="tag">Nuevo álbum</p>
+      <h1>No Fue Más</h1>
+      <a
+        class="artist spotify-artist"
+        href="https://open.spotify.com/intl-es/artist/0kJ1q6EBTQxr7BajFsVbMn?si=oP63iKYDQ4uGWMAnPZUlHw"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Abrir perfil de Chuflay en Spotify"
+      >
+        <i class="fa-brands fa-spotify"></i>
+        Chuflay
+      </a>
+
+      <p class="description">
+        No fue maj puej pelau. Así son los Yonson 😎
+      </p>
+
+      <p class="release">2026 · Skyline Studios</p>
+
+      <div class="countdown" data-release-date="2026-07-11T07:00:00-04:00">
+        <p class="countdown-label">Disponible en</p>
+
+        <div class="countdown-grid">
+          <div class="countdown-box">
+            <strong id="days">00</strong>
+            <span>Días</span>
+          </div>
+
+          <div class="countdown-box">
+            <strong id="hours">00</strong>
+            <span>Horas</span>
+          </div>
+
+          <div class="countdown-box">
+            <strong id="minutes">00</strong>
+            <span>Min</span>
+          </div>
+
+          <div class="countdown-box">
+            <strong id="seconds">00</strong>
+            <span>Seg</span>
+          </div>
+        </div>
+
+        <p id="countdown-message" class="countdown-message"></p>
+      </div>
+
+      <a class="scroll-down" href="#tracks">
+        Escuchar previews
+        <i class="fa-solid fa-arrow-down"></i>
+      </a>
+    </section>
+
+    <section class="music-section" id="tracks">
+      <div class="section-heading">
+        <h2 class="section-title">Previews oficiales</h2>
+        <p class="section-subtitle">
+          Un adelanto de lo que era, será y fué de <strong>No Fue Más</strong>.
+        </p>
+      </div>
+
+      <div class="tracks" aria-label="Lista de previews del álbum">
+        <article class="track">
+          <div class="number">1</div>
+          <div class="track-title">
+            <strong>Arrebato</strong>
+            <span>Chuflay</span>
+          </div>
+
+          <div class="player" data-src="audio/arrebato.wav" data-duration="2:25">
+            <button class="play-btn" type="button" aria-label="Reproducir Arrebato">
+              <i class="fa-solid fa-play"></i>
+            </button>
+
+            <div class="progress-wrap" aria-label="Barra de progreso de Arrebato">
+              <div class="progress-line">
+                <div class="progress-fill"></div>
+              </div>
+            </div>
+
+            <span class="duration">2:25</span>
+            <audio class="hidden-audio" preload="none" src="audio/arrebato.wav" controlslist="nodownload noplaybackrate"></audio>
+          </div>
+        </article>
+
+        <article class="track">
+          <div class="number">2</div>
+          <div class="track-title">
+            <strong>Dani</strong>
+            <span>Chuflay</span>
+          </div>
+
+          <div class="player" data-src="audio/dani.wav" data-duration="3:05">
+            <button class="play-btn" type="button" aria-label="Reproducir Dani">
+              <i class="fa-solid fa-play"></i>
+            </button>
+
+            <div class="progress-wrap" aria-label="Barra de progreso de Dani">
+              <div class="progress-line">
+                <div class="progress-fill"></div>
+              </div>
+            </div>
+
+            <span class="duration">3:05</span>
+            <audio class="hidden-audio" preload="none" src="audio/dani.wav" controlslist="nodownload noplaybackrate"></audio>
+          </div>
+        </article>
+
+        <article class="track">
+          <div class="number">3</div>
+          <div class="track-title">
+            <strong>Esquizofrenia</strong>
+            <span>Chuflay</span>
+          </div>
+
+          <div class="player" data-src="audio/esquizofrenia.wav" data-duration="3:30">
+            <button class="play-btn" type="button" aria-label="Reproducir Esquizofrenia">
+              <i class="fa-solid fa-play"></i>
+            </button>
+
+            <div class="progress-wrap" aria-label="Barra de progreso de Esquizofrenia">
+              <div class="progress-line">
+                <div class="progress-fill"></div>
+              </div>
+            </div>
+
+            <span class="duration">3:30</span>
+            <audio class="hidden-audio" preload="none" src="audio/esquizofrenia.wav" controlslist="nodownload noplaybackrate"></audio>
+          </div>
+        </article>
+
+        <article class="track">
+          <div class="number">4</div>
+          <div class="track-title">
+            <strong>Encadenado</strong>
+            <span>Chuflay</span>
+          </div>
+
+          <div class="player" data-src="audio/encadenado.wav" data-duration="3:05">
+            <button class="play-btn" type="button" aria-label="Reproducir Encadenado">
+              <i class="fa-solid fa-play"></i>
+            </button>
+
+            <div class="progress-wrap" aria-label="Barra de progreso de Encadenado">
+              <div class="progress-line">
+                <div class="progress-fill"></div>
+              </div>
+            </div>
+
+            <span class="duration">3:05</span>
+            <audio class="hidden-audio" preload="none" src="audio/encadenado.wav" controlslist="nodownload noplaybackrate"></audio>
+          </div>
+        </article>
+
+        <article class="track">
+          <div class="number">5</div>
+          <div class="track-title">
+            <strong>Llanto</strong>
+            <span>Chuflay</span>
+          </div>
+
+          <div class="player" data-src="audio/llanto.wav" data-duration="3:05">
+            <button class="play-btn" type="button" aria-label="Reproducir Llanto">
+              <i class="fa-solid fa-play"></i>
+            </button>
+
+            <div class="progress-wrap" aria-label="Barra de progreso de Llanto">
+              <div class="progress-line">
+                <div class="progress-fill"></div>
+              </div>
+            </div>
+
+            <span class="duration">3:05</span>
+            <audio class="hidden-audio" preload="none" src="audio/llanto.wav" controlslist="nodownload noplaybackrate"></audio>
+          </div>
+        </article>
+
+        <article class="track">
+          <div class="number">6</div>
+          <div class="track-title">
+            <strong>Colapso</strong>
+            <span>Chuflay</span>
+          </div>
+
+          <div class="player" data-src="audio/colapso.wav" data-duration="4:20">
+            <button class="play-btn" type="button" aria-label="Reproducir Colapso">
+              <i class="fa-solid fa-play"></i>
+            </button>
+
+            <div class="progress-wrap" aria-label="Barra de progreso de Colapso">
+              <div class="progress-line">
+                <div class="progress-fill"></div>
+              </div>
+            </div>
+
+            <span class="duration">4:20</span>
+            <audio class="hidden-audio" preload="none" src="audio/colapso.wav" controlslist="nodownload noplaybackrate"></audio>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="links-section" id="links">
+      <div class="section-heading">
+        <h2 class="section-title">Nuestros plim plom plam</h2>
+        <p class="section-subtitle">
+          Seguí el lanzamiento, contenido exclusivo y próximos anuncios oficiales.
+        </p>
+      </div>
+
+      <div class="links-grid">
+        <a class="platform" href="https://www.instagram.com/chuflay_oficial/" target="_blank" rel="noopener noreferrer" data-hover="Ver las próximas tocaditas">
+          <i class="fa-brands fa-instagram"></i>
+          <span>Instagram</span>
+        </a>
+
+        <a class="platform" href="https://www.tiktok.com/@chuflay_oficial" target="_blank" rel="noopener noreferrer" data-hover="Ver las nalgas de ferru">
+          <i class="fa-brands fa-tiktok"></i>
+          <span>TikTok</span>
+        </a>
+
+        <a class="platform" href="https://www.twitter.com/Chuflay_oficial" target="_blank" rel="noopener noreferrer" data-hover="No sabemos pq pero ahí estamos">
+          <i class="fa-brands fa-x-twitter"></i>
+          <span>X / Twitter</span>
+        </a>
+
+        <a class="platform" href="https://www.youtube.com/@chuflay_oficial" target="_blank" rel="noopener noreferrer" data-hover="Ver la jeta de pollo">
+          <i class="fa-brands fa-youtube"></i>
+          <span>YouTube</span>
+        </a>
+
+        <a class="platform" href="https://www.facebook.com/profile.php?id=61589286490538" target="_blank" rel="noopener noreferrer" data-hover="Ya sabés que hace el botón no?">
+          <i class="fa-brands fa-facebook-f"></i>
+          <span>Facebook</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Skyline Studios · Todos los derechos reservados · &copy; 2026
+  </footer>
+
+  <script src="js/player.js"></script>
+</body>
+</html>
